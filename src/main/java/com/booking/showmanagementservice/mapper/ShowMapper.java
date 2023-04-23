@@ -1,16 +1,16 @@
-package com.example.showinventoryservice.mapper;
+package com.booking.showmanagementservice.mapper;
 
-import com.example.showinventoryservice.dto.v1.AddSeatDto.SeatInfo;
-import com.example.showinventoryservice.dto.v1.SeatDto;
-import com.example.showinventoryservice.entity.Seat;
+import com.booking.showmanagementservice.dto.v1.ShowDto;
+import com.booking.showmanagementservice.entity.Show;
 import java.util.List;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 @Mapper( componentModel = "spring" )
-public interface SeatMapper {
-    SeatMapper INSTANCE = Mappers.getMapper( SeatMapper.class );
-    Seat toSeat(SeatDto seatDto);
-    List<SeatDto> toSeatDto(List<Seat> seats);
-    List<Seat> toSeat(List<SeatInfo> seats);
+public interface ShowMapper {
+    ShowMapper INSTANCE = Mappers.getMapper( ShowMapper.class );
+    Show toSeat(ShowDto seatDto);
+    ShowDto toSeatDto(Show show);
+    List<ShowDto> toSeatDto(List<Show> seats);
+    List<Show> toSeat(List<ShowDto> seats);
 }

@@ -1,4 +1,4 @@
-package com.example.showinventoryservice.exceptions;
+package com.booking.showmanagementservice.exceptions;
 
 import java.util.AbstractMap;
 import org.slf4j.Logger;
@@ -44,7 +44,7 @@ public class GlobalExceptionHandler {
   }
 
   @ExceptionHandler
-  public ResponseEntity<AbstractMap.SimpleEntry<String, String>> inventoryException(InventoryException exception) {
+  public ResponseEntity<AbstractMap.SimpleEntry<String, String>> inventoryException(ShowManagementException exception) {
     LOG.error("Request could not be processed: ", exception);
     AbstractMap.SimpleEntry<String, String> response =
         new AbstractMap.SimpleEntry<>("message", exception.getMessage());

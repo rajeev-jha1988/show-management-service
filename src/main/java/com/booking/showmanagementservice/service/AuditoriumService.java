@@ -1,7 +1,10 @@
-package com.example.showinventoryservice.service;
+package com.booking.showmanagementservice.service;
 
-import com.example.showinventoryservice.entity.Auditorium;
+
+import com.booking.showmanagementservice.entity.Auditorium;
 
 public interface AuditoriumService {
         Auditorium save(Auditorium auditorium);
+
+        Auditorium findByAuditoriumId(Long id);
 }

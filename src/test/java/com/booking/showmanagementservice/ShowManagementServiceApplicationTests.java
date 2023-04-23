@@ -1,4 +1,4 @@
-package com.example.showmanagementservice;
+package com.booking.showmanagementservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

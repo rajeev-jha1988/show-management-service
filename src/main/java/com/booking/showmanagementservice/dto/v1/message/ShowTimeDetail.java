@@ -1,4 +1,5 @@
-package com.example.theaterservice.dto.v1.message;
+package com.booking.showmanagementservice.dto.v1.message;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,10 +10,13 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AuditoriumMessageDto {
+public class ShowTimeDetail {
 
+    private String showTimeId;
+    private String showId;
+    private Long startTime;
+    private Long duration;
     private Long auditoriumId;
-    private String auditoriumName;
-    private Long theatreId;
+    private Long theaterId;
 
 }

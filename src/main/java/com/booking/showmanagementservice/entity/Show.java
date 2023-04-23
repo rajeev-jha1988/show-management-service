@@ -1,6 +1,6 @@
-package com.example.showmanagementservice.entity;
+package com.booking.showmanagementservice.entity;
 
-import com.example.showmanagementservice.constant.CollectionConstant;
+import com.booking.showmanagementservice.constant.CollectionConstant;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.List;
@@ -34,7 +34,10 @@ public class Show implements Serializable {
   private Instant releaseDate;
   private String language;
   private int duration;
-  private List<ShowTime> showTimes;
 
   private Long auditoriumId;
+
+  private List<Artist> artists;
+  private List<Producer> producers;
+  private List<Director> directors;
 }

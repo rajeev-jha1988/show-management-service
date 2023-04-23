@@ -1,4 +1,4 @@
-package com.example.showmanagementservice.config;
+package com.booking.showmanagementservice.config;
 
 import io.swagger.annotations.Api;
 import org.springframework.context.annotation.Bean;

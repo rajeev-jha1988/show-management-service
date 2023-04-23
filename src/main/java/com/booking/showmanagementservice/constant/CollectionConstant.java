@@ -1,4 +1,4 @@
-package com.example.showmanagementservice.constant;
+package com.booking.showmanagementservice.constant;
 
 public class CollectionConstant {
     public static final String show="show";

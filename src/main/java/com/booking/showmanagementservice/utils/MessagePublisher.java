@@ -1,8 +1,8 @@
-package com.example.theaterservice.util;
+package com.booking.showmanagementservice.utils;
 
-import com.example.theaterservice.dto.v1.message.BookingMessageDto;
-import com.example.theaterservice.enums.EventType;
-import com.example.theaterservice.exceptions.TheaterServiceException;
+import com.booking.showmanagementservice.enums.EventType;
+import com.booking.showmanagementservice.dto.v1.message.BookingMessageDto;
+import com.booking.showmanagementservice.exceptions.ShowManagementException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.Date;
@@ -37,7 +37,7 @@ public class MessagePublisher {
             rabbitTemplate.convertAndSend( commonExchange, eventType.getRoutingKey(), rabbitMqMessage );
 
         } catch( Exception e ) {
-            throw new TheaterServiceException(  );
+            throw new ShowManagementException(  );
         }
     }
 

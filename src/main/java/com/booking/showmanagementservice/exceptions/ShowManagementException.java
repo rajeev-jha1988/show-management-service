@@ -1,5 +1,5 @@
-package com.example.showinventoryservice.exceptions;
+package com.booking.showmanagementservice.exceptions;
 
-public class InventoryException extends RuntimeException{
+public class ShowManagementException extends RuntimeException{
 
 }

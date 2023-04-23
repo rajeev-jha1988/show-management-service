@@ -1,8 +1,11 @@
-package com.example.showmanagementservice.entity;
+package com.booking.showmanagementservice.entity;
 
-import com.example.showmanagementservice.constant.CollectionConstant;
+import com.booking.showmanagementservice.constant.CollectionConstant;
+import com.booking.showmanagementservice.enums.ShowTimeStatus;
 import java.io.Serializable;
 import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -27,14 +30,12 @@ public class ShowTime implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     private String id;
-    private Instant startTime;
-    private Instant date;
+    private LocalTime startTime;
+    private LocalDate date;
     private int duration;
-
     private String showId;
-
+    private ShowTimeStatus showTimeStatus;
     private Instant createdDate;
     private Instant updatedDate;
-
 
 }

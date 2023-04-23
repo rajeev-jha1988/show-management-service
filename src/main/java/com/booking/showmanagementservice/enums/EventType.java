@@ -1,4 +1,4 @@
-package com.example.theaterservice.enums;
+package com.booking.showmanagementservice.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,9 +7,9 @@ import lombok.Getter;
 @Getter
 public enum EventType {
 
-    THEATER_CREATED("theater.created.success","theater.created.success"),
-    THEATER_AUDITORIUM_ADDED("theater-auditorium.added.success","theater-auditorium.added.success");
+    SHOW_TIME_CREATED("show-time.added.success","show-time.added.success"),
+    SHOW_CREATED("show.created.success","show.created.success");
 
     private final String event;
-   private final String routingKey;
+    private final String routingKey;
 }

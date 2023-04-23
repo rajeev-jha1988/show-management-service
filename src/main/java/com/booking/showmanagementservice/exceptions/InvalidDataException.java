@@ -1,5 +1,5 @@
-package com.example.showinventoryservice.exceptions;
+package com.booking.showmanagementservice.exceptions;
 
-public class InvalidDataException extends InventoryException{
+public class InvalidDataException extends ShowManagementException {
 
 }

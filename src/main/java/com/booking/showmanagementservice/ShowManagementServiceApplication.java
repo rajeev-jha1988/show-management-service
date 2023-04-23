@@ -1,4 +1,4 @@
-package com.example.showmanagementservice;
+package com.booking.showmanagementservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
